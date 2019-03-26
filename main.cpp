@@ -4,54 +4,53 @@
 #include <sstream>
 #include <fstream>
 #include "graph.h"
- 
-using namespace std;
- 
 
- // Part 1 : Find the connected components and the bridge
+using namespace std;
+
+// Part 1 : Find the connected components and the bridge
 void part1(ifstream &inputfile, ofstream &outputfile)
 {
-
 }
 
- // Part 2 :  Find a ticket using Dijkstra	
+// Part 2 :  Find a ticket using Dijkstra
 void part2(ifstream &inputfile, ofstream &outputfile)
 {
-
 }
 
- // Part 3 :Try to do a tour of all cities 
+// Part 3 :Try to do a tour of all cities
 void part3(ifstream &inputfile, ofstream &outputfile)
 {
- 
-
 }
- 
- int main(int argc, char *argv[])
- {
+
+int main(int argc, char *argv[])
+{
 	//Read in the test case
-    ifstream inputfile;
-    ofstream outputfile;
+	ifstream inputfile;
+	ofstream outputfile;
 
-    if(argc==3){
-        inputfile.open(argv[1]);
-        outputfile.open(argv[2]);
-    }
-    else{
-        cout<<"Not enough arguments"<<endl;
-    }
+	if (argc == 3)
+	{
+		inputfile.open(argv[1]);
+		outputfile.open(argv[2]);
+	}
+	else
+	{
+		cout << "Not enough arguments" << endl;
+	}
 
-    string str;
+	string str;
 
-    getline(inputfile, str);
-    int part;
-    stringstream convert(str);
-    convert >> part;
+	getline(inputfile, str);
+	int part;
+	stringstream convert(str);
+	convert >> part;
 
+	if (part == 1)
+		part1(inputfile, outputfile);
+	else if (part == 2)
+		part2(inputfile, outputfile);
+	else if (part == 3)
+		part3(inputfile, outputfile);
 
-	 if(part == 1) part1(inputfile, outputfile);
-	 else if(part == 2) part2(inputfile, outputfile);
-	 else if(part == 3) part3(inputfile, outputfile);
-
-	 return 0;
- }
+	return 0;
+}

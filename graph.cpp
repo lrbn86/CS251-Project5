@@ -4,8 +4,6 @@
 
 #define INFI 1000000
 
-
-
 /*
 	Graph class for use in Project 5.
 	
@@ -16,15 +14,7 @@
 
 */
 
-// Constructor for Graph 
+// Constructor for Graph
 Graph::Graph(int Vertices, int routes)
 {
-   
 }
-
-
-
-
-
-
-
