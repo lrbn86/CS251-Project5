@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "graph.h"
+#include "graph.hpp"
 
 #define INFI 1000000
 

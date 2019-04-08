@@ -3,14 +3,23 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
-#include "graph.h"
+#include "graph.hpp"
 
 using namespace std;
 
 // Part 1 : Find the connected components and the bridge
 void part1(ifstream &inputfile, ofstream &outputfile)
 {
-  
+  int numberOfPlaces, numberOfRoutes;
+  inputfile >> numberOfPlaces >> numberOfRoutes;
+  inputfile.ignore(); // Ignore newline
+  for (int i = 0; i < numberOfRoutes; i++)
+  {
+    string routeInfo;
+    getline(inputfile, routeInfo);
+    outputfile << routeInfo << endl;
+  }
+
 }
 
 // Part 2 :  Find a ticket using Dijkstra
