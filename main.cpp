@@ -10,6 +10,7 @@ using namespace std;
 // Part 1 : Find the connected components and the bridge
 void part1(ifstream &inputfile, ofstream &outputfile)
 {
+  
 }
 
 // Part 2 :  Find a ticket using Dijkstra
