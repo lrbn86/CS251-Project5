@@ -1,0 +1,5 @@
+The cost from IND to ORD is: 163.30
+The cost from ORD to DTW is: 238.30
+The cost from DCA to DTW is: 150.00
+The cost from DTW to LAX is: 300.00
+The root of MST is: DTW

@@ -2,6 +2,7 @@
 #define GRAPH_H
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -10,11 +11,12 @@ class Graph
 private:
 	int numCities;
 	int numRoutes;
-	string *cities;
+	vector<string> cities;
 
 public:
 	Graph(int, int);
-	// Create the graph
+	
+  // Create the graph
 	void addRoute(string, string, double);
 
 	//part 1: Find the connected components and the bridges

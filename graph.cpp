@@ -15,6 +15,39 @@
 */
 
 // Constructor for Graph
-Graph::Graph(int Vertices, int routes)
+Graph::Graph(int vertices, int routes)
 {
+
+  // Initialize numCities and numRoutes 
+  numCities = vertices;
+  numRoutes = routes;
+  
+  // Graph is represented as an adjacency list
+  cout << "Vertices: " << numCities << endl;
+
+}
+
+
+// Returns the discovery time of vertex
+int disc(int vertex)
+{
+  return 0;
+}
+
+// Returns the earliest discovery time of a node that can be reached to from vertex
+int evaFun(int vertex)
+{
+  return 0;
+}
+
+bool isSeparationEdge(int vertex1, int vertex2)
+{
+  return evaFun(vertex1) > disc(vertex2);
+}
+
+// Performs an iterative depth first search
+// Used to find separation edges
+void dfs(int vertex)
+{
+
 }
