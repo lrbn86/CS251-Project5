@@ -38,10 +38,11 @@ void part1(ifstream &inputfile, ofstream &outputfile)
     getline(ss, source, ' ');
     getline(ss, destination, ' ');
     getline(ss, ticketPrice, ' '); // Note: ticketPrice is a floating point, not a string
-    outputfile << "The cost from " << source << " to " << destination << " is: " << ticketPrice << endl;
+    //outputfile << "The cost from " << source << " to " << destination << " is: " << ticketPrice << endl;
     //outputfile << "Origin: " << source << endl;
     //outputfile << "Destination: " << destination << endl;
     //outputfile << "Ticket Price: " << ticketPrice << endl;
+    g.addRoute(source, destination, ticketPrice);
   }
 
   /*
@@ -52,6 +53,8 @@ void part1(ifstream &inputfile, ofstream &outputfile)
 
       There should not be any newline at end of output file.
   */
+
+  g.getRoutes();
 }
 
 // Part 2 :  Find a ticket using Dijkstra

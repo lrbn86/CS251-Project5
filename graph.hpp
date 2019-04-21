@@ -17,8 +17,9 @@ public:
 	Graph(int, int);
 	
   // Create the graph
-	void addRoute(string, string, double);
-
+	void addRoute(string, string, string);
+  void getRoutes();
+  int getIndexOf(string s);
 	//part 1: Find the connected components and the bridges
 	void analyseGraph();
 
